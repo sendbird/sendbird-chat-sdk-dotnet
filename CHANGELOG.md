@@ -1,6 +1,10 @@
 Changelog
 =========
 
+# v1.1.1 (March, 21, 2016)
+* Fixed a bug that `SendBird.Login` fails to login again with different User ID.
+* Fixed `SendBird.Model.SystemEvent` data field parsing error.
+
 # v1.1.0 (March, 17, 2016)
 * Added `MemberCountQuery` which returns total member count and online member count.
 * Updated `MemberListQuery`. You can select to return all members list or online members list using onlineOnly.
