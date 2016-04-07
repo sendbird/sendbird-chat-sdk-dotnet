@@ -1,5 +1,7 @@
 Changelog
 =========
+# 1.2.0 (April, 7, 2016)  
+* Updated All Internal API request(asynchronous)
 
 # v1.1.1 (March, 21, 2016)
 * Fixed a bug that `SendBird.Login` fails to login again with different User ID.
