@@ -1,6 +1,9 @@
 Changelog
 =========
-# 1.2.0 (April, 7, 2016)  
+# v1.2.1 (April, 12, 2016)  
+* Updated Internal Settings
+
+# v1.2.0 (April, 7, 2016)  
 * Updated All Internal API request(asynchronous)
 
 # v1.1.1 (March, 21, 2016)
