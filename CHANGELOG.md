@@ -1,5 +1,9 @@
 Changelog
 =========
+# v2.0.0 (May, 10, 2016)  
+* Added routing for getting server address
+* `websocket-sharp.dll` file is changed, please update your existing dll.
+
 # v1.2.1 (April, 12, 2016)  
 * Updated Internal Settings
 
