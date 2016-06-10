@@ -1,7 +1,7 @@
 Changelog
 =========
 # v2.1.2 (June, 10, 2016)  
-* SendBirdSDK.GetConnectionStatus() is added.
+* SendBirdSDK.GetConnectionState() is added.
 
 # v2.1.1 (May, 24, 2016)  
 * Performance improvement
