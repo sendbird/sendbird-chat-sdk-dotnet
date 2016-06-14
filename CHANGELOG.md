@@ -1,5 +1,10 @@
 Changelog
 =========
+# v2.2.0 (June, 14, 2016)  
+* SDK Internal timer logic is changed.
+* Performance Improvement
+* Fixed a bug `NullReferenceException` in `SendBirdSDK.SendMessage`
+
 # v2.1.2 (June, 10, 2016)  
 * SendBirdSDK.GetConnectionState() is added.
 
