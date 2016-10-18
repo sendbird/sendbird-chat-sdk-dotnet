@@ -1,5 +1,8 @@
 Changelog
 =========
+# v2.3.1 (October, 10, 2016)  
+* Improved stability.
+
 # v2.3.0 (July, 27, 2016)  
 * Performance Improvement
 * Unity SDK is separated
