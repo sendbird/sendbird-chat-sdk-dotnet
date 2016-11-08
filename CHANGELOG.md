@@ -1,12 +1,12 @@
 Changelog
 =========
-# v2.3.1 (October, 10, 2016)  
-* Improved stability.
+# v3.0.0 (Nov, 7, 2016)  
+* `SendBird .NET SDK v3`.
 
 # v2.3.0 (July, 27, 2016)  
-* Performance Improvement
-* Unity SDK is separated
-* Now you can set `SendBirdSDK.CommonVar.IS_LOGGING` (`true`, `false`) you can see logs from SendBird SDK
+* Performance Improvement.
+* Unity SDK is separated.
+* Now you can set `SendBirdSDK.CommonVar.IS_LOGGING` (`true`, `false`) you can see logs from SendBird SDK.
 
 # v2.2.0 (June, 14, 2016)  
 * SDK Internal timer logic is changed.
