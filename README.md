@@ -1,16 +1,3 @@
-SendBird SDK .NET
-=================
-
-[SendBird](https://sendbird.com) provides the chat API and SDK for your app enabling real-time communication among your users.  
-
-[Documentation](https://docs.sendbird.com/dotnet)
-
-# Sample UI
-
-## Unity
- * [Sample UI](https://github.com/smilefam/SendBird-Unity)
-
-
 # [SendBird](https://sendbird.com) - Messaging and Chat API for Mobile Apps and Websites
 [SendBird](https://sendbird.com) provides the chat API and SDK for your app enabling real-time communication among your users.
 
