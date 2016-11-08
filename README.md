@@ -13,5 +13,5 @@ https://docs.sendbird.com/
 ### Unity
 Place `SendBird.Unity.dll` & `websocket-sharp.dll` into your project.
 
-### .NET
+### .NET/Xamarin
 Place `SendBird.dll` & `websocket-sharp.dll` into your project.
