@@ -1,5 +1,9 @@
 Changelog
 =========
+# v3.0.1 (Nov, 21, 2016)  
+* Faster connection time. 
+* Improved stability.
+
 # v3.0.0 (Nov, 7, 2016)  
 * `SendBird .NET SDK v3`.
 
