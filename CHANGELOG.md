@@ -1,5 +1,16 @@
 Changelog
 =========
+# v3.0.2 (Dec, 9, 2016)
+* Improved performance.
+* Improved stability.
+* Added user IDs filters and query type to GroupChannelListQuery.
+* Added channel custom type for OpenChannel and GroupChannel.
+* Fixed to call ChannelHandler.onChannelChanged when unread message count or last message has been updated.
+* Fixed to update last message of group channel when UserMessage or FileMessage is successfully sent.
+* Added custom type to messages.
+* Added group channel list search by member nicknames and user IDs.
+* Added creating and updating channel cover image with binary file.
+
 # v3.0.1 (Nov, 21, 2016)  
 * Faster connection time. 
 * Improved stability.
