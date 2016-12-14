@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.3 (DEC, 14, 2016)
+* Improved stability.
+
 # v3.0.2 (Dec, 9, 2016)
 * Improved performance.
 * Improved stability.
