@@ -1,5 +1,9 @@
 Changelog
 =========
+# v3.0.4 (Jan, 17, 2017)
+* Improved stability.
+* Fixed read receipt reset issue.
+
 # v3.0.3 (DEC, 14, 2016)
 * Improved stability.
 
