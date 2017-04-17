@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.6 (Apr, 17, 2017)
+* Fixed message deletion issue on Unity 3d. 
+
 # v3.0.5 (Jan, 20, 2017)
 * Speed up initial loading on some platforms.
 
