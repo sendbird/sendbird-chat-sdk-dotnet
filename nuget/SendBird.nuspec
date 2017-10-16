@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Xam.Plugin.SendBird</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>SendBird Plugin for Xamarin</title>
     <authors>Wilson Vargas</authors>
     <owners>Wilson Vargas</owners>
@@ -10,8 +10,7 @@
     <projectUrl>https://sendbird.com/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/wilsonvargas/SendBird-SDK-dotNET/master/icon/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This a simple plugin of SendBird service for Xamarin</description>
-    <releaseNotes>Enable in-app messaging for your mobile apps and websites using SendBird messaging SDK and chat API.</releaseNotes>
+    <description>Enable in-app messaging for your mobile apps and websites using SendBird messaging SDK and chat API.</description>
     <copyright>Copyright 2017</copyright>
     <tags>xamarin, pcl, xam, android, xamarin.forms, ios, chat, real-time</tags>
   </metadata>
