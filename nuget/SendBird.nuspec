@@ -8,7 +8,7 @@
     <owners>Wilson Vargas</owners>
     <licenseUrl>https://github.com/smilefam/SendBird-SDK-dotNET/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://sendbird.com/</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/wilsonvargas/SendBird-SDK-dotNET/master/icon/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>This a simple plugin of SendBird service for Xamarin</description>
     <releaseNotes>Enable in-app messaging for your mobile apps and websites using SendBird messaging SDK and chat API.</releaseNotes>
