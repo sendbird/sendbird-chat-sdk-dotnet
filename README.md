@@ -9,6 +9,18 @@
 ## Documentation
 https://docs.sendbird.com/
 
+**Platform Support**
+
+|Platform|Supported|Version|
+| ------------------- | :-----------: | :------------------: |
+|Xamarin.iOS|Yes|iOS 7+|
+|Xamarin.Android|Yes|API 14+|
+|Windows Phone Silverlight|No|
+|Windows Phone RT|No|
+|Windows Store RT|No|
+|Windows 10 UWP|Is coming|
+|Xamarin.Mac|No||
+
 ## Install SendBird .NET SDK 
 
 ### Unity
