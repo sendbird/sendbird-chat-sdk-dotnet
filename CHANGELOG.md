@@ -1,6 +1,10 @@
 Changelog
 =========
-# v3.0.7 (Jan 18, 2017)
+# v3.0.8 (Jan 24, 2018)
+* Reconnect() method added for explicit reconnection.
+* Application ID re-initialization added.
+
+# v3.0.7 (Jan 18, 2018)
 * Improved stability.
 
 # v3.0.6 (Apr 17, 2017)
