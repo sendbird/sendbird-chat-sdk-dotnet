@@ -15,3 +15,6 @@ Place `SendBird.Unity.dll` & `websocket-sharp.dll` into your project.
 
 ### .NET/Xamarin
 Place `SendBird.dll` & `websocket-sharp.dll` into your project.
+
+
+** `SendBird.dll` and `SendBird.Unity.dll` reference specific version of `websocket-sharp.dll`. Please update both `websocket-sharp.dll` and `SendBird.*.dll` together. **

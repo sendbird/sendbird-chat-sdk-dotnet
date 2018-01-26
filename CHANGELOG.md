@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.9 (Jan 26, 2018)
+* Fixed signing assembly issue on Windows build.
+
 # v3.0.8 (Jan 24, 2018)
 * Reconnect() method added for explicit reconnection.
 * Application ID re-initialization added.
