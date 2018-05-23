@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.10 (May 23, 2018)
+* Updated WebSocket lib version. 
+
 # v3.0.9 (Jan 26, 2018)
 * Fixed signing assembly issue on Windows build.
 
