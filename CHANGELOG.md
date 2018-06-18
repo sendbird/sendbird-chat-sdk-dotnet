@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.11 (JUN 18, 2018)
+* Added CustomTypesFilter in GroupChannelListQuery to search channels based on CustomType.  
+
 # v3.0.10 (May 23, 2018)
 * Updated WebSocket lib version. 
 
