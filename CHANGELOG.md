@@ -1,5 +1,9 @@
 Changelog
 =========
+
+# v3.0.12 (JUL 28, 2018)
+* Improved SendBird server connection.  
+
 # v3.0.11 (JUN 18, 2018)
 * Added CustomTypesFilter in GroupChannelListQuery to search channels based on CustomType.  
 
