@@ -1,6 +1,9 @@
 Changelog
 =========
 
+# v3.0.13 (JUL 25, 2019)
+* Improved ConnectionHandler.  
+
 # v3.0.12 (JUL 28, 2018)
 * Improved SendBird server connection.  
 
