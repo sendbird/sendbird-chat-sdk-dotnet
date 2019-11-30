@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.14 (NOV 30, 2019)
+* Added `BanUser`, `UnbanUser` in GroupChannel
+* Added creating and updating GroupChannel with operators.
 
 # v3.0.13 (JUL 25, 2019)
 * Improved ConnectionHandler.  
@@ -11,7 +14,7 @@ Changelog
 * Added CustomTypesFilter in GroupChannelListQuery to search channels based on CustomType.  
 
 # v3.0.10 (May 23, 2018)
-* Updated WebSocket lib version. 
+* Updated WebSocket lib version.
 
 # v3.0.9 (Jan 26, 2018)
 * Fixed signing assembly issue on Windows build.
@@ -24,7 +27,7 @@ Changelog
 * Improved stability.
 
 # v3.0.6 (Apr 17, 2017)
-* Fixed message deletion issue on Unity 3d. 
+* Fixed message deletion issue on Unity 3d.
 
 # v3.0.5 (Jan 20, 2017)
 * Speed up initial loading on some platforms.
@@ -48,7 +51,7 @@ Changelog
 * Added creating and updating channel cover image with binary file.
 
 # v3.0.1 (Nov 21, 2016)  
-* Faster connection time. 
+* Faster connection time.
 * Improved stability.
 
 # v3.0.0 (Nov 7, 2016)  
