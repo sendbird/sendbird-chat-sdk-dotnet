@@ -1,5 +1,10 @@
 Changelog
 =========
+# v3.0.15 (May 15, 2020)
+* Introduced group channel invitation feature.
+* Introduced message update feature.
+* Added channel creation custom URL option.
+
 # v3.0.14 (NOV 30, 2019)
 * Added `BanUser`, `UnbanUser` in GroupChannel
 * Added creating and updating GroupChannel with operators.
