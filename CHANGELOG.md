@@ -1,5 +1,10 @@
 Changelog
 =========
+# v3.0.16 (Jun 1, 2020)
+* Retrieval of banned/unmuted user list added.
+* Channel hide/archive feature added.
+* User/message reporting feature added.
+
 # v3.0.15 (May 15, 2020)
 * Introduced group channel invitation feature.
 * Introduced message update feature.
