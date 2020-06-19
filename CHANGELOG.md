@@ -1,5 +1,10 @@
 Changelog
 =========
+# v3.0.17 (Jun 19, 2020)
+* Chat history reset feature added.
+* User mention feature added.
+* User event handler added.
+
 # v3.0.16 (Jun 1, 2020)
 * Retrieval of banned/unmuted user list added.
 * Channel hide/archive feature added.
