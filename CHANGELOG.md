@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.18 (Oct 22, 2020)
+* File encryption support.
+
 # v3.0.17 (Jun 19, 2020)
 * Chat history reset feature added.
 * User mention feature added.
