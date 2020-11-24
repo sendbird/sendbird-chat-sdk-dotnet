@@ -120,7 +120,7 @@ SendBirdClient.Connect(USER_ID, ACCESS_TOKEN, (User user, SendBirdException e) =
 });
 ```
 
-#### Tips for user account security
+#### - Tips for user account security
 
 From **Settings** > **Application** > **Security** > **Access token permission** setting in your dashboard, you can prevent users without an access token from logging in to your Sendbird application or restrict their access to read and write messages.
 
