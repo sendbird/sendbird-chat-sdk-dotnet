@@ -19,7 +19,7 @@ Through Chat SDK for .NET, you can efficiently integrate real-time chat into you
 
 ### For further reference
 
-Find out more about Sendbird Chat for .NET on [Chat SDK for .NET doc](https://sendbird.com/docs/chat/v3/dotnet/getting-started/chat-sdk-setup).
+Find out more about Sendbird Chat for .NET on [Chat SDK for .NET doc](https://sendbird.com/docs/chat/v3/dotnet/getting-started/chat-sdk-setup). If you have any comments or questions regarding bugs and feature requests, visit [Sendbird community](https://community.sendbird.com). 
 
 <br />
 
