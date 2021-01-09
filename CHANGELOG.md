@@ -1,5 +1,9 @@
 Changelog
 =========
+# v3.0.19 (Jan 9, 2021)
+* Fix FileMessage.GetSender() thrown an exception in some cases.
+* UserMessage.Sender property is deprecated. Use UserMessage.GetSender() instead.
+
 # v3.0.18 (Oct 22, 2020)
 * File encryption support.
 
