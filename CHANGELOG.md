@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.20 (Mar 9, 2021)
+* Bug fix.
+
 # v3.0.19 (Jan 9, 2021)
 * Fix FileMessage.GetSender() thrown an exception in some cases.
 * UserMessage.Sender property is deprecated. Use UserMessage.GetSender() instead.
