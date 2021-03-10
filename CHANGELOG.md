@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.21 (Mar 10, 2021)
+* Bug fix.
+
 # v3.0.20 (Mar 9, 2021)
 * Bug fix.
 
