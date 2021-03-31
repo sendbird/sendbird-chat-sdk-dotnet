@@ -1,5 +1,9 @@
 Changelog
 =========
+# v3.0.22 (Mar 31, 2021)
+* Add ApplicationUserListQuery.
+* Statbility improvement.
+
 # v3.0.21 (Mar 10, 2021)
 * Bug fix.
 
