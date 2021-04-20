@@ -1,5 +1,9 @@
 Changelog
 =========
+# v3.0.23 (Apr 20, 2021)
+* Add missing method for UserMessageParams.
+* Stability improvement.
+
 # v3.0.22 (Mar 31, 2021)
 * Add ApplicationUserListQuery.
 * Statbility improvement.
