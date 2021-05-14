@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.25 (May 14, 2021)
+* Monior bug fix.
+
 # v3.0.24 (May 7, 2021)
 * Add public group channel name search.
 
