@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.26 (May 25, 2021)
+* Add operator related methods.
+
 # v3.0.25 (May 14, 2021)
 * Monior bug fix.
 
