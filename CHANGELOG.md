@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.27 (Jun 14, 2021)
+* Add operator list query.
+
 # v3.0.26 (May 25, 2021)
 * Add operator related methods.
 
