@@ -1,5 +1,12 @@
 Changelog
 =========
+# v3.0.28 (July 16, 2021)
+* Add Public Interface For Emoji
+*  - GetEmoji
+*  - GetAllEmoji
+*  - GetEmojiCategory
+* Bug Fix
+
 # v3.0.27 (Jun 14, 2021)
 * Add operator list query.
 
