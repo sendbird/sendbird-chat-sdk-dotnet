@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.29 (Oct. 12, 2021)
+* Fix SetFile() Bug.
+
 # v3.0.28 (July 16, 2021)
 * Add Public Interface For Emoji
 *  - GetEmoji
