@@ -1,6 +1,6 @@
 # [Sendbird](https://sendbird.com) Chat SDK for .NET
 
-[![Platform](https://img.shields.io/badge/platform-Unity%2F.NET%2FMono%2FXamarin-orange.svg)](#)
+[![Platform](https://img.shields.io/badge/platform-.NET%2FMono%2FXamarin-orange.svg)](#)
 [![Languages](https://img.shields.io/badge/language-C%23-orange.svg)](#)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-dotNET/blob/master/LICENSE.md)
 
@@ -16,7 +16,7 @@
 ## Introduction
 
 Through Chat SDK for .NET, you can efficiently integrate real-time chat into your client app. On the client-side implementation, you can initialize, configure and build the chat with minimal effort. On the server-side, Sendbird ensures reliable infra-management services for your chat within the app. This read.me provides the Chat SDK’s structure, supplementary features, and the installation steps. 
-
+> Note: If you want to Chat SDK for Unity, You can find it at https://github.com/sendbird/sendbird-chat-sdk-unity
 ### For further reference
 
 Find out more about Sendbird Chat for .NET on [Chat SDK for .NET doc](https://sendbird.com/docs/chat/v3/dotnet/getting-started/chat-sdk-setup). If you have any comments or questions regarding bugs and feature requests, visit [Sendbird community](https://community.sendbird.com). 
@@ -33,19 +33,11 @@ The minimum requirements for Chat SDK for .NET are:
 
 ### WebSocket library
 
-The Chat SDK for .NET uses `websocket-sharp` for websocket connections. You must include `websocket-sharp.dll` as well as `SendBird.dll` or `SendBird.Unity.dll` and update them together. You can find `websocket-sharp.dll` on the same [Github repository](https://github.com/sendbird/SendBird-SDK-dotNET) as the Chat SDK.
+The Chat SDK for .NET uses `websocket-sharp` for websocket connections. You must include `websocket-sharp.dll` as well as `SendBird.dll` and update them together.
 
 <br />
 
 ## Getting started
-
-### Try the sample app
-
-The fastest way to test Chat SDK is to build your chat app on top of our sample app. To create a project for the sample app, download the app from our GitHub repository. The link is provided below.  
-
-- https://github.com/sendbird/Sendbird-Unity
-
-Make sure to input your application ID into the sample app. Go to the [Create a Sendbird application from your dashboard](https://sendbird.com/docs/chat/v3/dotnet/getting-started/chat-sdk-setup#2-step-1-create-a-sendbird-application-from-your-dashboard) section to learn more.
 
 ### Step 1: Create a Sendbird application from your dashboard
 
@@ -55,13 +47,13 @@ A Sendbird application comprises everything required in a chat service including
 2. When prompted by the setup wizard, enter your organization information to manage Sendbird applications.
 3. When your dashboard home appears, click **Create +** at the top-right corner.
 
-Regardless of the platform, only one Sendbird application can be integrated per app; however, the application supports communication across allSendbird’s provided platforms without any additional setup. Sendbird currently supports iOS, Android, web, .NET, and Unity client apps.
+Regardless of the platform, only one Sendbird application can be integrated per app; however, the application supports communication across allSendbird’s provided platforms without any additional setup. Sendbird currently supports iOS, Android, web, .NET apps.
 
 > Note: All the data is limited to the scope of a single application, thus the users in different Sendbird applications are unable to chat with each other.
 
 ### Step 2: Download the latest Chat SDK
 
-- https://github.com/sendbird/SendBird-SDK-dotNET
+- https://github.com/sendbird/sendbird-chat-sdk-dotnet
 
 <br />
 
