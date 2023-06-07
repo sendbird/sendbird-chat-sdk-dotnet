@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.30 (Jun. 7, 2023)
+* Support Websocket TLS 1.2
+
 # v3.0.29 (Oct. 12, 2021)
 * Fix SetFile() Bug.
 
