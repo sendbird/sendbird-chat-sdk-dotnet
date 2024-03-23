@@ -1,5 +1,8 @@
 Changelog
 =========
+# v3.0.31 (Mar. 25, 2024)
+* Fixed Websocket not supporting TLS 1.2
+
 # v3.0.30 (Jun. 7, 2023)
 * Support Websocket TLS 1.2
 
