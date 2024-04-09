@@ -1,5 +1,8 @@
 Changelog
 =========
+#  v3.0.32 (Apr 9, 2024)
+* Added SendbirdChatPrivacyInfo.xcprivacy for Apple Privacy Manifest
+
 # v3.0.31 (Mar. 25, 2024)
 * Fixed Websocket not supporting TLS 1.2
 
