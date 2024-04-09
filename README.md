@@ -10,6 +10,7 @@
   1. [Before getting started](#before-getting-started)
   1. [Getting started](#getting-started)
   1. [Send your first message](#send-your-first-message)
+  1. [Support Apple Privacy manifest](#support-apple-privacy-manifest)
 
 <br />
 
@@ -163,3 +164,8 @@ openChannel.SendUserMessage(MESSAGE, DATA, (UserMessage userMessage, SendBirdExc
     }
 });
 ```
+
+
+## Support Apple Privacy manifest
+
+Add the contents of the SendbirdChatPrivacyInfo.xcprivacy file to the project's PrivacyInfo.xcprivacy.
