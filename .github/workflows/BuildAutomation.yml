@@ -1,0 +1,14 @@
+name: Approve by automation
+
+on:
+  workflow_dispatch:
+jobs:
+  approve-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 'approve a pull request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr review ${{ env.PR_NUMBER }} --approve --body "approved by automation"
