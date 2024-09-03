@@ -10,4 +10,4 @@
 - Added support for message resending
 - Added support for pinned messages
 - Added support for extra data in a message
-- Support for Nuget
+- Support for NuGet
