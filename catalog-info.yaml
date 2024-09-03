@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: sendbird-chat-sdk-dotnet
-  description: Chat SDK v3 for .NET
+  description: Chat SDK v4 for .NET
   annotations:
     github.com/project-slug: sendbird/sendbird-chat-sdk-dotnet
 spec:

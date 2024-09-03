@@ -1,171 +1,160 @@
+
 # [Sendbird](https://sendbird.com) Chat SDK for .NET
 
-[![Platform](https://img.shields.io/badge/platform-.NET%2FMono%2FXamarin-orange.svg)](#)
+[![Platform](https://img.shields.io/badge/platform-.NET-orange.svg)](#)
 [![Languages](https://img.shields.io/badge/language-C%23-orange.svg)](#)
 [![Commercial License](https://img.shields.io/badge/license-Commercial-brightgreen.svg)](https://github.com/sendbird/SendBird-SDK-dotNET/blob/master/LICENSE.md)
 
 ## Table of contents
 
-  1. [Introduction](#introduction)
-  1. [Before getting started](#before-getting-started)
-  1. [Getting started](#getting-started)
-  1. [Send your first message](#send-your-first-message)
-  1. [Support Apple Privacy manifest](#support-apple-privacy-manifest)
+1. [Introduction](#introduction)
+2. [Getting started](#getting-started)
+3. [Sending your first message](#sending-your-first-message)
 
-<br />
 
 ## Introduction
 
-Through Chat SDK for .NET, you can efficiently integrate real-time chat into your client app. On the client-side implementation, you can initialize, configure and build the chat with minimal effort. On the server-side, Sendbird ensures reliable infra-management services for your chat within the app. This read.me provides the Chat SDK’s structure, supplementary features, and the installation steps. 
-> Note: If you want to Chat SDK for Unity, You can find it at https://github.com/sendbird/sendbird-chat-sdk-unity
-### For further reference
-
-Find out more about Sendbird Chat for .NET on [Chat SDK for .NET doc](https://sendbird.com/docs/chat/v3/dotnet/getting-started/chat-sdk-setup). If you have any comments or questions regarding bugs and feature requests, visit [Sendbird community](https://community.sendbird.com). 
-
+The Sendbird Chat SDK for .NET allows you to add real-time chat into your client app with minimal effort. Sendbird offers a feature rich, scalable, and proven chat solution depended on by companies like Reddit, Hinge, PubG and Paytm.
 <br />
 
-## Before getting started
+### How it works
 
-### Requirements
+The Chat SDK provides the full functionality to provide a rich chat experience, implementing it begins by adding a user login, listing the available channels, selecting or creating an open channel or group channel, and receive messages and other events through channel event delegates and the ability to send a message. Once this basic functionality is in place, congratulations, you now have a chat app!
 
-The minimum requirements for Chat SDK for .NET are: 
-
-- Our Chat SDK is designed and tested on `Mono/.NET 2.0` platform and `Xamarin Studio 6.1.1`. You can also use our SDK on any platforms which are compatible with `Mono/.NET 2.0`.
-
-### WebSocket library
-
-The Chat SDK for .NET uses `websocket-sharp` for websocket connections. You must include `websocket-sharp.dll` as well as `SendBird.dll` and update them together.
-
+Once this is in place, take a look at [all the other features](https://sendbird.com/features/chat-messaging/features) that Sendbird supports and add what works best for your users.
 <br />
+
 
 ## Getting started
 
 ### Step 1: Create a Sendbird application from your dashboard
 
-A Sendbird application comprises everything required in a chat service including users, messages, and channels. A Sendbird application can either be created through the dashboard. To create an application:
+Before installing Sendbird Chat SDK, you need to create a Sendbird application on the [Sendbird Dashboard](https://dashboard.sendbird.com). You will need the `App ID` of your Sendbird application when initializing the Chat SDK.
 
-1. Go to the [Sendbird Dashboard]() and enter your email and password, and create a new account. You can also sign up with a **Google** account.
-2. When prompted by the setup wizard, enter your organization information to manage Sendbird applications.
-3. When your dashboard home appears, click **Create +** at the top-right corner.
-
-Regardless of the platform, only one Sendbird application can be integrated per app; however, the application supports communication across allSendbird’s provided platforms without any additional setup. Sendbird currently supports iOS, Android, web, .NET apps.
-
-> Note: All the data is limited to the scope of a single application, thus the users in different Sendbird applications are unable to chat with each other.
-
-### Step 2: Download the latest Chat SDK
-
-- https://github.com/sendbird/sendbird-chat-sdk-dotnet
+> **Note**: Each Sendbird application can be integrated with a single client app. Within the same application, users can communicate with each other across all platforms, whether they are on mobile devices or on the web.
 
 <br />
 
-## Send your first message
+### Step 2: Install the Chat SDK
+
+To install the Sendbird Chat SDK for .NET, you need to add the `Sendbird.Chat` package from NuGet. Follow the steps below:
+
+1. Open your project in Visual Studio.
+2. Go to **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+3. Search for `Sendbird.Chat` in the **Browse** tab.
+4. Select the package and click **Install**.
+
+Alternatively, you can install the package using the NuGet Package Manager Console with the following command:
+
+```bash
+dotnet add package Sendbird.Chat
+```
+
+Once the package is installed, you can start integrating Sendbird Chat into your application.
+
+<br />
+
+## Sending your first message
+
+Now that the Chat SDK has been imported, we're ready to start sending a message.
 
 ### Authentication
 
-To use the features of the Chat SDK in your client app, a `SendBirdClient` instance must be initiated in each client app before user authentication with Sendbird server. These instances communicate and interact with the server based on an authenticated user account, allowing for the client app to use the Chat SDK features. 
+In order to use the features of the Chat SDK, a `SendbirdChat` instance must be initiated through user authentication with Sendbird server. This instance communicates and interacts with the server based on an authenticated user account, and then the user’s client app can use the Chat SDK's features.
 
-### Step 1: Initialize the Chat SDK 
+Here are the steps to sending your first message using Chat SDK:
 
-You need to initialize a Sendbird instance before authentication. Initialization binds the Chat SDK to Android’s context which allows Chat SDK to respond to connection and state changes and also enables client apps to use Chat SDK features. 
+<br />
 
-To initialize a Sendbird instance, pass the `App_ID` of your Sendbird application in the dashboard to the `SendBirdClient.Init()`. As the `SendBirdClient.Init()` can only be a single instance, call it only a single time across your client app. Typically, initialization is implemented in the user login screen.
+### Step 3: Using the Sendbird.Chat namespace
 
+Once the SDK have been installed, create a new source code file and add the following code at the top to start using Sendbird Chat SDK.
 ```csharp
-SendBirdClient.Init(APP_ID);
+using Sendbird.Chat;
 ```
 
-### Step 2: Connect to Sendbird server
+### Step 4: Initialize the Chat SDK
 
-Apart from initialization or use of the `Init()` method, your client app must always be connected to Sendbird server before calling any methods. If you attempt to call a method without connecting, a [`ERR_CONNECTION_REQUIRED (800101)`](https://sendbird.com/docs/chat/v3/dotnet/guides/error-codes) error would return.
+Now, initialize the Chat SDK in the app to allow the Chat SDK to respond to changes in the connection status in Android client apps.
 
-Connect a user to Sendbird server using a unique user ID or in combination with an access token. Sendbird prefers the latter method, as it ensures privacy with the user, but the former method is useful during the developmental phase or if your service doesn't require additional security.
+To initialize the `SendbirdChat` instance, pass the `APP_ID` of your Sendbird application in the [Sendbird Dashboard](https://dashboard.sendbird.com) as an argument to a parameter in the `SendbirdChat.Init()` method.
 
-#### A. User ID
-
-Connect a user to Sendbird server using their unique **user ID**. By default, Sendbird server can authenticate a user by a unique user ID. Upon request for a connection, the server queries the database to check for a match. Any untaken user ID is automatically registered as a new user to the Sendbird system, while an existing ID is allowed to log indirectly.  The ID must be unique within a Sendbird application, such as a hashed email address or phone number in your service.
 
 ```csharp
-SendBirdClient.Connect(USER_ID, (User user, SendBirdException e) =>
+SendbirdChat.Init(new SbInitParams(APP_ID));
+```
+
+### Step 5: Connect to Sendbird server
+
+After initialization by use of the `Init()` method, your client app must always be connected to Sendbird server before calling any methods. If you attempt to call a method without connecting, an `ConnectionRequired(800101)` error would return.
+
+Connect a user to Sendbird server either through a unique user ID or in combination with an access token. Sendbird prefers the latter method, as it ensures privacy with the user. The former is useful during the developmental phase or if your service doesn't require additional security.
+
+#### A. Using a unique user ID
+
+Connect a user to Sendbird server using their unique **user ID**. By default, Sendbird server can authenticate a user by a unique user ID. Upon request for a connection, the server queries the database to check for a match. Any untaken user ID is automatically registered as a new user to the Sendbird system, while an existing ID is allowed to log indirectly. The ID must be unique within a Sendbird application, such as a hashed email address or phone number in your service.
+
+This allows you to get up and running without having to go deep into the details of the token registration process, however make sure to enable enforcing tokens before launching as it is a security risk to launch without.
+
+```csharp
+SendbirdChat.Connect(USER_ID, (inUser, inError) => { });
+```
+
+#### B. Using a combination of unique user ID and token
+
+Sendbird prefers that you pass the APP ID through the use of a token, as it ensures privacy and security for the users. [Create a user](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user) along with their access token, or [issue an session token](https://sendbird.com/docs/chat/v3/platform-api/user/managing-session-tokens/issue-a-session-token) to pass during connection. A comparison between an access token and session token can be found [here](https://sendbird.com/docs/chat/v3/platform-api/user/managing-session-tokens/issue-a-session-token). Once a token is issued, a user is required to provide the issued token in the `SendbirdChat.connect()` method which is used for logging in.
+
+1. Using the Chat Platform API, create a Sendbird user account with the information submitted when a user signs up your service.
+2. Save the user ID along with the issued token to your persistent storage which is securely managed.
+3. When the user attempts to log in to the Sendbird application, load the user ID and token from the storage, and then pass them to the `SendbirdChat.Connect()` method.
+4. Periodically replacing the user's token is recommended to protect the account.
+
+```csharp
+SendbirdChat.Connect(USER_ID, AUTH_TOKEN, (inUser, inError) => { });
+```
+
+<br />
+
+### Step 6: Create a new open channel
+
+Create an open channel using the following codes. Open channels are where all users in your Sendbird application can easily participate without an invitation.
+
+```csharp
+SendbirdChat.OpenChannel.CreateChannel(new SbOpenChannelCreateParams(), (inChannel, inError) => { });
+```
+
+### Step 7: Enter the channel
+
+Enter the open channel to send and receive messages.
+
+```csharp
+SbOpenChannel openChannel = null;
+SendbirdChat.OpenChannel.GetChannel(CHANNEL_URL, (inChannel, inCache, inGetChannelError) =>
 {
-    if(e != null)   // Error
+    if (inGetChannelError != null)
+        return; //Error
+
+    openChannel = inChannel;
+    openChannel.Enter((inEnterChannelError) =>
     {
-      return;
-    }
-});
-```
-
-#### B. A combination of user ID and access token ID 
-
-Sendbird prefers that you pass the APP ID through the use of a token, as it ensures privacy for the users. Create a user along with their access token, or issue an access token for an existing user. Once an access token is issued, a user is required to provide the access token in the `SendBirdClient.connect()` method which is used for logging in.
-
-1. Using the [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user), create a Sendbird user account with the information submitted when a user signs up your service.
-2. Save the user ID along with the issued access token to your persistent storage which is securely managed.
-3. When the user attempts to log in to the Sendbird application, load the user ID and access token from the storage, and then pass them to the `SendBirdClient.connect()` method.
-4. Periodically replacing the user's access token is recommended to protect the account.
-
-```csharp
-SendBirdClient.Connect(USER_ID, ACCESS_TOKEN, (User user, SendBirdException e) =>
-{
-    if(e != null)    // Error
-    {
-        return;
-    }
-});
-```
-
-#### - Tips for user account security
-
-From **Settings** > **Application** > **Security** > **Access token permission** setting in your dashboard, you can prevent users without an access token from logging in to your Sendbird application or restrict their access to read and write messages.
-
-For security reasons, you can also use a session token when a user logs in to Sendbird server instead of an access token. Go to the [Access token vs. Session token](https://sendbird.com/docs/chat/v3/platform-api/guides/user#2-create-a-user-3-access-token-vs-session-token) section from the [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/getting-started/prepare-to-use-api) to learn more.
-
-### Step 3: Create a new open channel
-
-Create an [open channel](https://sendbird.com/docs/chat/v3/dotnet/guides/open-channel#2-create-a-channel). Once created, all users in your Sendbird application can easily participate in the channel. You also can create a [group channel](https://sendbird.com/docs/chat/v3/dotnet/guides/group-channel#2-create-a-channel) by [inviting users](https://sendbird.com/docs/chat/v3/dotnet/guides/group-channel#2-invite-users-as-members) as new members to the channel.
-
-```csharp
-OpenChannel.CreateChannel(NAME, COVER_IMAGE_OR_URL, DATA, CUSTOM_TYPE, (OpenChannel openChannel, SendBirdException e) => {
-    if(e != null) // Error.
-    { 
-        return;
-    }
-});
-```
-
-### Step 4: Enter the channel
-
-Enter the channel to send and receive messages.
-
-```csharp
-OpenChannel.GetChannel(CHANNEL_URL, (OpenChannel openChannel, SendBirdException e) => {
-    if (e != null)  // Error.
-    {    
-        return;
-    }
-    
-    openChannel.Enter((SendBirdException e) => {
-        if (e != null)    // Error.
-        {    
-            return;
-        }
+        if (inEnterChannelError != null)
+            return; //Error
     });
 });
 ```
 
-### Step 5: Send a message to the channel
+<br />
 
-Finally, send a message to the channel. There are [three types](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#-3-resource-representation): a user message, which is a plain text, a file message, which is a binary file, such as an image or PDF, and an admin message, which is a plain text sent through the [dashboard](https://dashboard.sendbird.com/auth/signin) or [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-send-a-message).
+### Step 8: Send a message to the channel
+
+Finally, send a message to the channel. There are [three types](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#-3-resource-representation): a user message, which is a plain text, a file message, which is a binary file, such as an image or PDF, and an admin message, which is a plain text also sent through the [dashboard](https://dashboard.sendbird.com/auth/signin) or [Chat Platform API](https://sendbird.com/docs/chat/v3/platform-api/guides/messages#2-send-a-message).
 
 ```csharp
-openChannel.SendUserMessage(MESSAGE, DATA, (UserMessage userMessage, SendBirdException e) => {
-    if (e != null)  // Error.
-    {
-        return;
-    }
+openChannel.SendUserMessage(MESSAGE, (inMessage, inError) =>
+{
+    if (inError != null)
+        return; //Error
 });
 ```
 
-
-## Support Apple Privacy manifest
-
-Add the contents of the SendbirdChatPrivacyInfo.xcprivacy file to the project's PrivacyInfo.xcprivacy.
+<br />
