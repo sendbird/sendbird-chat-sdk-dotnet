@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.0.1 (Sep 25, 2024)
+### Improvements
+ - Improved WebSocket connection
+
 ## 4.0.0 (Sep 3, 2024)
 ### Features
 - Added group channel collection
