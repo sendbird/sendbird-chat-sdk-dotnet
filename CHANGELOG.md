@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.1.1 (Jul 14, 2025)
+### Bug Fixes
+- Resolved WebSocket connection failure due to User-Agent header on .NET Framework
+
 ## 4.1.0 (Nov 29, 2024)
 ### Features
 - Added `SetPushTriggerOption` to `SendbirdChatClient`
