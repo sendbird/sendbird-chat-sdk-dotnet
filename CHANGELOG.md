@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.1.2 (Oct 27, 2024)
+### Improvements
+- Enhanced stability and performance
+
 ## 4.1.1 (Jul 14, 2025)
 ### Bug Fixes
 - Resolved WebSocket connection failure due to User-Agent header on .NET Framework
