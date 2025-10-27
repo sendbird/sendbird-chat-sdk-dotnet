@@ -54,7 +54,7 @@ jobs:
       - name: Create and push tag
         if: steps.check_tag.outputs.exists == 'false' && inputs.dry_run == false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.UNITY_DOTNET_AUTOMATION_PAT_TOKEN }}
         run: |
           TAG="${{ steps.extract.outputs.tag }}"
           git config user.name "github-actions[bot]"
@@ -69,7 +69,7 @@ jobs:
       - name: Create GitHub Release
         if: steps.check_tag.outputs.exists == 'false' && inputs.dry_run == false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.UNITY_DOTNET_AUTOMATION_PAT_TOKEN }}
         run: |
           TAG="${{ steps.extract.outputs.tag }}"
           VERSION="${{ steps.extract.outputs.version }}"
