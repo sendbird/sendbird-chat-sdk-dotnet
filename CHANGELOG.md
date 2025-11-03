@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.1.3 (Nov 3, 2025)
+### Improvements
+- Removed unnecessary URL encoding from SB-SDK-User-Agent header
+
 ## 4.1.2 (Oct 27, 2024)
 ### Improvements
 - Enhanced stability and performance

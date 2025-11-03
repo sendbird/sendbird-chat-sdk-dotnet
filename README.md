@@ -14,7 +14,7 @@
 
 ## Introduction
 
-The Sendbird Chat SDK for .NET allows you to add real-time chat into your client app with minimal effort. Sendbird offers a feature rich, scalable, and proven chat solution.
+The Sendbird Chat SDK for .NET allows you to add real-time chat into your client app with minimal effort. Sendbird offers a feature rich, scalable, and proven chat solution depended on by companies like Reddit, Hinge, PubG and Paytm.
 <br />
 
 ### How it works
