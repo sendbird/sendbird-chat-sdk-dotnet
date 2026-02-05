@@ -1,5 +1,9 @@
 # Change Log
 
+## 4.1.4 (Feb 4, 2026)
+### Bug Fixes
+- Fixed WebGL memory issue by optimizing JSON parsing for message deserialization
+
 ## 4.1.3 (Nov 3, 2025)
 ### Improvements
 - Removed unnecessary URL encoding from SB-SDK-User-Agent header
