@@ -1,5 +1,10 @@
 # Change Log
 
+## 4.2.0 (Feb 10, 2026)
+### Improvements
+- Improved JSON deserialization performance and reduced memory allocations
+- Reduced memory usage for API responses
+
 ## 4.1.4 (Feb 4, 2026)
 ### Bug Fixes
 - Fixed WebGL memory issue by optimizing JSON parsing for message deserialization
